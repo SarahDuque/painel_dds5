@@ -1,13 +1,16 @@
 import './App.css';
-import Cabecario from './components/Cabecario';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './components/pages/Home';
+import Login from './components/pages/Login';
 
 function App() {
   return (
-    <>
-        <Cabecario/> 
-      <h1>ola mundo</h1>
-      <p>dds 05</p>
-    </>
+    <Router>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Login' element={<Login/>}/>
+      </Routes>
+    </Router>
   );
 }
 
