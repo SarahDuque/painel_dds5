@@ -1,5 +1,5 @@
 
-function AbreviaUnCurricular (props) {
+function AbreviaUC (props) {
     let uc = new String(props.unidade_curricular).split(' ');
     uc.splice(-2);
     uc = uc[0].substring(4,0)+'. ' + uc[uc.length -1];
@@ -7,4 +7,4 @@ function AbreviaUnCurricular (props) {
 }
 
 
-export default AbreviaUnCurricular;
+export default AbreviaUC;
