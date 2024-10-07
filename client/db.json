@@ -34,37 +34,25 @@
       "chave": null
     },
     {
-      "id": "3833"
-    },
-    {
-      "id": "e26d"
-    },
-    {
-      "id": "c084"
-    },
-    {
-      "id": "80dd"
-    },
-    {
-      "id": "0291",
-      "data": "2024-10-16",
-      "data_hora_inicio": "19:21",
-      "data_hora_fim": "18:25",
-      "turma": "AIT DDS 05",
-      "instrutor": "Sarah",
-      "unidadeCurricular": "Publicidade",
-      "ambiente": "Porto",
+      "id": "d4ed",
+      "data": "2024-10-07",
+      "data_hora_inicio": "16:20",
+      "data_hora_fim": "22:26",
+      "turma": "AIT DSS 05",
+      "instrutor": "Sarah Monteiro Duque",
+      "unidade_curricular": "A",
+      "ambiente": "SALA-3004",
       "chave": null
     },
     {
-      "id": "ec1d",
-      "data": "2024-10-16",
-      "data_hora_inicio": "18:24",
-      "data_hora_fim": "18:24",
-      "turma": "AIT DDS 05",
-      "instrutor": "RAMON",
-      "unidade_curricular": "a",
-      "ambiente": "lab - 5001",
+      "id": "cbf1",
+      "data": "2024-10-07",
+      "data_hora_inicio": "16:34",
+      "data_hora_fim": "22:40",
+      "turma": "HTC-MEC-4-92",
+      "instrutor": "a a b",
+      "unidade_curricular": "DESENVOLVIMENTO DE SISTEMAS DE AUTOMAÇÃO MECÂNICA (CH: 100.0000)",
+      "ambiente": "VTRIA-3-LAB-3003",
       "chave": null
     }
   ],

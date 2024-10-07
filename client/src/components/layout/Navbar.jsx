@@ -13,7 +13,7 @@ function Navbar() {
           </button>
           <div id='menu' className='collapse navbar-collapse'>
           <ul className='navbar-nav mx-auto'>
-            <li className='navbar-item'><NavLink className='nav-link' to="">Inicio</NavLink></li>
+            <li className='navbar-item'><NavLink className='nav-link' to="/">Inicio</NavLink></li>
             <li className='navbar-item'><NavLink className='nav-link' to="/gestao_usuario">Gestão Usuário</NavLink></li>
             <li className='navbar-item'><NavLink className='nav-link' to="/import_csv">Import CSV</NavLink></li>
             <li className='navbar-item'><NavLink className='nav-link' to="/gestao_aula">Gestão Aula</NavLink></li>
