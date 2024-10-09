@@ -43,17 +43,6 @@
       "unidade_curricular": "A",
       "ambiente": "SALA-3004",
       "chave": null
-    },
-    {
-      "id": "cbf1",
-      "data": "2024-10-07",
-      "data_hora_inicio": "16:34",
-      "data_hora_fim": "22:40",
-      "turma": "HTC-MEC-4-92",
-      "instrutor": "a a b",
-      "unidade_curricular": "DESENVOLVIMENTO DE SISTEMAS DE AUTOMAÇÃO MECÂNICA (CH: 100.0000)",
-      "ambiente": "VTRIA-3-LAB-3003",
-      "chave": null
     }
   ],
   "imagens": [
