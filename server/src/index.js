@@ -3,13 +3,16 @@ import express from 'express';
 import cors from 'cors'
 
 //Importando funções (metodos do controller)
-import { mostrarAulas } from './controllers/AulaController.js';
+import { mostrarAulas, criarAula} from './controllers/AulaController.js';
 
 //Chamando função express
 const app = express();
 const porta = 5000;
 
 app.use(cors());
+
+//Habilitando JSON
+app.use(express.json());
 
 //Rota padrão para teste de API
 app.get('/',(req,res)=>{
@@ -18,6 +21,7 @@ app.get('/',(req,res)=>{
 
 //Rotas de aulas
 app.get('/aulas',mostrarAulas);
+app.post('/aulas',criarAula);
 
 //Iniciando API e exibindo mensagem no console com a porta
 app.listen(porta,()=>{
