@@ -125,3 +125,20 @@ export async function deleteAula(id) {
         return [500, error];
     }
 }
+
+export async function showOneAula(id) {
+    const conexao = mysql.createPool(db);
+
+    console.log('Mostrando uma aula no Model Aula');
+    const sql = `SELECT * FROM  aulas WHERE id =?`;
+    const params = [id];
+
+    try {
+        const [retorno] = await conexao.query(sql, params);
+        console.log('Mostrando aula');
+        return [200, retorno[0]];
+    } catch (error) {
+        console.log(error);
+        return [500, error];
+    }
+}

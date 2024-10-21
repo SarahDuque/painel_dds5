@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom';
+import FormatarData from './FormatarData';
 
 function FormAula({titulo, textoBotao, handdleSubmit, id,tipo}) {
     const navigate = useNavigate();
@@ -14,7 +15,8 @@ function FormAula({titulo, textoBotao, handdleSubmit, id,tipo}) {
 
     useEffect(()=>{
         if (id) {
-          baixarAula(id)  
+            console.log(id);
+          baixarAula(id);
         }
     },[]);
 
@@ -26,12 +28,13 @@ function FormAula({titulo, textoBotao, handdleSubmit, id,tipo}) {
                     'Content-Type':'application/json'
                 }
             })
-            if (resposta.ok) {
+            if (!resposta.ok) {
                 throw new Error('Erro ao buscara aula');
             }
             else{
                 const respostaJSON = await resposta.json();
                 console.log(respostaJSON);
+                
                 setTurma(respostaJSON.turma);
                 setInstrutor(respostaJSON.instrutor);
                 setUnidadeCurricular(respostaJSON.unidadeCurricular);
